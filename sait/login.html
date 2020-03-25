@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Gaming Blog </title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery-1.11.0.min.js"></script>
+<!-- Custom Theme files -->
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- Google Fonts -->
+<link href='//fonts.googleapis.com/css?family=Ubuntu:300,400,500,700' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+<script type="text/javascript">
+$(function () {
+	
+	var filterList = {
+	
+		init: function () {
+		
+			// MixItUp plugin
+			// http://mixitup.io
+			$('#portfoliolist').mixitup({
+				targetSelector: '.portfolio',
+				filterSelector: '.filter',
+				effects: ['fade'],
+				easing: 'snap',
+				// call the hover effect
+				onMixEnd: filterList.hoverEffect()
+			});				
+		
+		},
+		
+		hoverEffect: function () {
+		
+			// Simple parallax effect
+			$('#portfoliolist .portfolio').hover(
+				function () {
+					$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+					$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');				
+				},
+				function () {
+					$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
+					$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');								
+				}		
+			);				
+		
+		}
+
+	};
+	
+	// Run the show!
+	filterList.init();
+	
+	
+});	
+</script>
+</head>
+<body>
+<!-- Header Starts Here -->
+<div class="header">
+	<div class="container">
+		<div class="logo">
+			<a href="index.html"><img src="images/ign.png" alt="Logo" width="120" height="120"></a>
+		</div>
+		<span class="menu"></span>
+		<div class="navigation">
+			<ul class="navig cl-effect-3" >
+				<li><a href="index.html">Home</a></li>
+				<li><a href="games.html">Games</a></li>
+				<li><a href="news.html">News</a></li>
+				<li><a href="features.html">Features</a></li>
+<!--				<li><a href="contact.html">Contact</a></li>-->
+                <li><a href="features.html">Account</a></li>
+			</ul>
+			<div class="search-bar">
+                <input type="text" placeholder="Search" required="" />
+                <input type="submit" value="" />
+			</div>
+            
+			<div class="clearfix"></div>
+			<script>
+				$( "span.menu" ).click(function() {
+				  $( ".navigation" ).slideToggle( "slow", function() {
+				    // Animation complete.
+				  };
+				});
+			</script>
+
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</div>
+<!-- Header Ends Here -->	
+<!-- What New Part starts Here -->
+<body>
+
+<h2>Login Form</h2>
+
+<form action="/action_page.php" method="post">
+
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+        
+    <button type="submit">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+</form>
+<!-- What New Part Endss Here -->
+<!-- Footer Starts Here -->
+<div class="footer">
+	<div class="container">
+		<ul class="social">
+			<li><i class="fa"></i></li>
+			<li><i class="fb"></i></li>
+			<li><i class="fc"></i></li>
+		</ul>
+	</div>
+	
+</div>
+<!-- Footer Ends Here -->
+</body>
+</html>

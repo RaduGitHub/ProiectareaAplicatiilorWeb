@@ -1,0 +1,204 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Gaming Blog </title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery-1.11.0.min.js"></script>
+<!-- Custom Theme files -->
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- Google Fonts -->
+<link href='//fonts.googleapis.com/css?family=Ubuntu:300,400,500,700' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+<script type="text/javascript">
+$(function () {
+	
+	var filterList = {
+	
+		init: function () {
+		
+			// MixItUp plugin
+			// http://mixitup.io
+			$('#portfoliolist').mixitup({
+				targetSelector: '.portfolio',
+				filterSelector: '.filter',
+				effects: ['fade'],
+				easing: 'snap',
+				// call the hover effect
+				onMixEnd: filterList.hoverEffect()
+			});				
+		
+		},
+		
+		hoverEffect: function () {
+		
+			// Simple parallax effect
+			$('#portfoliolist .portfolio').hover(
+				function () {
+					$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+					$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');				
+				},
+				function () {
+					$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
+					$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');								
+				}		
+			);				
+		
+		}
+
+	};
+	
+	// Run the show!
+	filterList.init();
+	
+	
+});	
+</script>
+</head>
+<body>
+<!-- Header Starts Here -->
+<div class="header">
+	<div class="container">
+		<div class="logo">
+			<a href="index.html"><img src="images/ign.png" alt="Logo" width="120" height="120"></a>
+		</div>
+		<span class="menu"></span>
+		<div class="navigation">
+			<ul class="navig cl-effect-3" >
+				<li><a href="index.html">Home</a></li>
+				<li><a href="games.html">Games</a></li>
+				<li><a href="news.html">News</a></li>
+				<li><a href="features.html">Features</a></li>
+<!--				<li><a href="contact.html">Contact</a></li>-->
+                <li><a href="features.html">Account</a></li>
+			</ul>
+			<div class="search-bar">
+                <input type="text" placeholder="Search" required="" />
+                <input type="submit" value="" />
+			</div>
+            
+			<div class="clearfix"></div>
+			<script>
+				$( "span.menu" ).click(function() {
+				  $( ".navigation" ).slideToggle( "slow", function() {
+				    // Animation complete.
+				  });
+				});
+			</script>
+
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</div>
+<div class="banner"></div>
+<!-- Header Ends Here -->	
+<div class="banner-bot">
+	<div class="container">
+		<h2>Website description / overview  ???</h2>
+		<p>Some website description or overview on homepage!</p>
+		<p>Let corona take me today!</p>
+		<nav class="cl-effect-3"><a href="features.html">More</a></nav>
+	</div>
+</div>
+<!-- Most-liked Starts Here -->
+<div class="most-liked">
+	<div class="container">
+		<h3>Popular games</h3>
+		<div class="gallery-top">
+			<ul id="filters" class="clearfix">
+						<li><span class="filter active" data-filter="app card icon logo web">1</span></li>
+						<li><span class="filter" data-filter="app">2</span></li>
+						<li><span class="filter" data-filter="card">3</span></li>
+						<li><span class="filter" data-filter="icon">4</span></li>
+					</ul>
+					<div id="portfoliolist">
+					<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="index.html" class="b-link-stripe b-animate-go  thickbox">
+						     <img src="images/pic1.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "> </h2>
+						  		</div></a>
+		                </div>
+					</div>				
+					<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="index.html" class="b-link-stripe b-animate-go  thickbox">
+						     <img src="images/pic2.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "> </h2>
+						  	 </div></a>
+		                </div>
+					</div>		
+					<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="index.html" class="b-link -stripe b-animate-go  thickbox">
+						     <img src="images/pic3.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "> </h2>
+						  	 </div></a>
+		                </div>
+					</div>				
+					<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="index.html" class="b-link-stripe b-animate-go  thickbox">
+						     <img src="images/pic4.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "> </h2>
+						  	 </div></a>
+		                </div>
+					</div>	
+					<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="index.html" class="b-link-stripe b-animate-go  thickbox">
+						     <img src="images/pic6.jpg" width="150" height="150" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "> </h2>
+						  	 </div></a>
+		                </div>
+					</div>			
+				</div>
+
+		</div>
+	</div>
+</div>
+<!-- Gallery Ends Here -->
+<!-- What New Part starts Here -->
+<div class="what-new">
+	<div class="container">
+		<h3>What's new</h3>
+		<div class="blog-news">
+			<div class="blog-news-grid">
+				<div class="news-grid-left">
+					<h4>06</h4>
+					<small>of january 2015</small>
+				</div>
+				<div class="news-grid-right">
+					<h4>Portal 3 announced!</h4>
+					<p>Valve just announced portal 3 and it`s VR. </p>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="blog-news-grid">
+				<div class="news-grid-left">
+					<h4>28</h4>
+					<small>of january 2015</small>
+				</div>
+				<div class="news-grid-right">
+					<h4>Game delayed</h4>
+					<p>Some game got delayed</p>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+</div>
+<!-- What New Part Endss Here -->
+<!-- Footer Starts Here -->
+<div class="footer">
+	<div class="container">
+		<ul class="social">
+			<li><i class="fa"></i></li>
+			<li><i class="fb"></i></li>
+			<li><i class="fc"></i></li>
+		</ul>
+	</div>
+	
+</div>
+<!-- Footer Ends Here -->
+</body>
+</html>
