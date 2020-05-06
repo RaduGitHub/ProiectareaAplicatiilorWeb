@@ -1,0 +1,8 @@
+C:\Users\radum\source\repos\GameForum\GameForum.ApplicationLogic\bin\Debug\netstandard2.0\GameForum.ApplicationLogic.deps.json
+C:\Users\radum\source\repos\GameForum\GameForum.ApplicationLogic\bin\Debug\netstandard2.0\GameForum.ApplicationLogic.dll
+C:\Users\radum\source\repos\GameForum\GameForum.ApplicationLogic\bin\Debug\netstandard2.0\GameForum.ApplicationLogic.pdb
+C:\Users\radum\source\repos\GameForum\GameForum.ApplicationLogic\obj\Debug\netstandard2.0\GameForum.ApplicationLogic.csprojAssemblyReference.cache
+C:\Users\radum\source\repos\GameForum\GameForum.ApplicationLogic\obj\Debug\netstandard2.0\GameForum.ApplicationLogic.AssemblyInfoInputs.cache
+C:\Users\radum\source\repos\GameForum\GameForum.ApplicationLogic\obj\Debug\netstandard2.0\GameForum.ApplicationLogic.AssemblyInfo.cs
+C:\Users\radum\source\repos\GameForum\GameForum.ApplicationLogic\obj\Debug\netstandard2.0\GameForum.ApplicationLogic.dll
+C:\Users\radum\source\repos\GameForum\GameForum.ApplicationLogic\obj\Debug\netstandard2.0\GameForum.ApplicationLogic.pdb
