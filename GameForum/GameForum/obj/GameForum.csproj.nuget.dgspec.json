@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\radum\\source\\repos\\GameForum\\GameForum\\GameForum.csproj": {}
+    "F:\\PAW\\ProiectareaAplicatiilorWeb\\GameForum\\GameForum\\GameForum.csproj": {}
   },
   "projects": {
-    "C:\\Users\\radum\\source\\repos\\GameForum\\GameForum.ApplicationLogic\\GameForum.ApplicationLogic.csproj": {
+    "F:\\PAW\\ProiectareaAplicatiilorWeb\\GameForum\\GameForum.ApplicationLogic\\GameForum.ApplicationLogic.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\radum\\source\\repos\\GameForum\\GameForum.ApplicationLogic\\GameForum.ApplicationLogic.csproj",
+        "projectUniqueName": "F:\\PAW\\ProiectareaAplicatiilorWeb\\GameForum\\GameForum.ApplicationLogic\\GameForum.ApplicationLogic.csproj",
         "projectName": "GameForum.ApplicationLogic",
-        "projectPath": "C:\\Users\\radum\\source\\repos\\GameForum\\GameForum.ApplicationLogic\\GameForum.ApplicationLogic.csproj",
+        "projectPath": "F:\\PAW\\ProiectareaAplicatiilorWeb\\GameForum\\GameForum.ApplicationLogic\\GameForum.ApplicationLogic.csproj",
         "packagesPath": "C:\\Users\\radum\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\radum\\source\\repos\\GameForum\\GameForum.ApplicationLogic\\obj\\",
+        "outputPath": "F:\\PAW\\ProiectareaAplicatiilorWeb\\GameForum\\GameForum.ApplicationLogic\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -66,14 +66,14 @@
         }
       }
     },
-    "C:\\Users\\radum\\source\\repos\\GameForum\\GameForum.EFDataAccess\\GameForum.EFDataAccess.csproj": {
+    "F:\\PAW\\ProiectareaAplicatiilorWeb\\GameForum\\GameForum.EFDataAccess\\GameForum.EFDataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\radum\\source\\repos\\GameForum\\GameForum.EFDataAccess\\GameForum.EFDataAccess.csproj",
+        "projectUniqueName": "F:\\PAW\\ProiectareaAplicatiilorWeb\\GameForum\\GameForum.EFDataAccess\\GameForum.EFDataAccess.csproj",
         "projectName": "GameForum.EFDataAccess",
-        "projectPath": "C:\\Users\\radum\\source\\repos\\GameForum\\GameForum.EFDataAccess\\GameForum.EFDataAccess.csproj",
+        "projectPath": "F:\\PAW\\ProiectareaAplicatiilorWeb\\GameForum\\GameForum.EFDataAccess\\GameForum.EFDataAccess.csproj",
         "packagesPath": "C:\\Users\\radum\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\radum\\source\\repos\\GameForum\\GameForum.EFDataAccess\\obj\\",
+        "outputPath": "F:\\PAW\\ProiectareaAplicatiilorWeb\\GameForum\\GameForum.EFDataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -92,8 +92,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\Users\\radum\\source\\repos\\GameForum\\GameForum.ApplicationLogic\\GameForum.ApplicationLogic.csproj": {
-                "projectPath": "C:\\Users\\radum\\source\\repos\\GameForum\\GameForum.ApplicationLogic\\GameForum.ApplicationLogic.csproj"
+              "F:\\PAW\\ProiectareaAplicatiilorWeb\\GameForum\\GameForum.ApplicationLogic\\GameForum.ApplicationLogic.csproj": {
+                "projectPath": "F:\\PAW\\ProiectareaAplicatiilorWeb\\GameForum\\GameForum.ApplicationLogic\\GameForum.ApplicationLogic.csproj"
               }
             }
           }
@@ -109,17 +109,17 @@
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[3.1.3, )"
+              "version": "[3.1.4, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[3.1.3, )"
+              "version": "[3.1.4, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[3.1.3, )"
+              "version": "[3.1.4, )"
             },
             "NETStandard.Library": {
               "suppressParent": "All",
@@ -142,14 +142,14 @@
         }
       }
     },
-    "C:\\Users\\radum\\source\\repos\\GameForum\\GameForum\\GameForum.csproj": {
+    "F:\\PAW\\ProiectareaAplicatiilorWeb\\GameForum\\GameForum\\GameForum.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\radum\\source\\repos\\GameForum\\GameForum\\GameForum.csproj",
+        "projectUniqueName": "F:\\PAW\\ProiectareaAplicatiilorWeb\\GameForum\\GameForum\\GameForum.csproj",
         "projectName": "GameForum",
-        "projectPath": "C:\\Users\\radum\\source\\repos\\GameForum\\GameForum\\GameForum.csproj",
+        "projectPath": "F:\\PAW\\ProiectareaAplicatiilorWeb\\GameForum\\GameForum\\GameForum.csproj",
         "packagesPath": "C:\\Users\\radum\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\radum\\source\\repos\\GameForum\\GameForum\\obj\\",
+        "outputPath": "F:\\PAW\\ProiectareaAplicatiilorWeb\\GameForum\\GameForum\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -168,8 +168,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\radum\\source\\repos\\GameForum\\GameForum.EFDataAccess\\GameForum.EFDataAccess.csproj": {
-                "projectPath": "C:\\Users\\radum\\source\\repos\\GameForum\\GameForum.EFDataAccess\\GameForum.EFDataAccess.csproj"
+              "F:\\PAW\\ProiectareaAplicatiilorWeb\\GameForum\\GameForum.EFDataAccess\\GameForum.EFDataAccess.csproj": {
+                "projectPath": "F:\\PAW\\ProiectareaAplicatiilorWeb\\GameForum\\GameForum.EFDataAccess\\GameForum.EFDataAccess.csproj"
               }
             }
           }
@@ -185,25 +185,25 @@
           "dependencies": {
             "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[3.1.3, )"
+              "version": "[3.1.4, )"
             },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[3.1.3, )"
+              "version": "[3.1.4, )"
             },
             "Microsoft.AspNetCore.Identity.UI": {
               "target": "Package",
-              "version": "[3.1.3, )"
+              "version": "[3.1.4, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[3.1.3, )"
+              "version": "[3.1.4, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[3.1.3, )"
+              "version": "[3.1.4, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",

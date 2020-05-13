@@ -6,3 +6,11 @@ C:\Users\radum\source\repos\GameForum\GameForum.ApplicationLogic\obj\Debug\netst
 C:\Users\radum\source\repos\GameForum\GameForum.ApplicationLogic\obj\Debug\netstandard2.0\GameForum.ApplicationLogic.AssemblyInfo.cs
 C:\Users\radum\source\repos\GameForum\GameForum.ApplicationLogic\obj\Debug\netstandard2.0\GameForum.ApplicationLogic.dll
 C:\Users\radum\source\repos\GameForum\GameForum.ApplicationLogic\obj\Debug\netstandard2.0\GameForum.ApplicationLogic.pdb
+F:\PAW\ProiectareaAplicatiilorWeb\GameForum\GameForum.ApplicationLogic\bin\Debug\netstandard2.0\GameForum.ApplicationLogic.deps.json
+F:\PAW\ProiectareaAplicatiilorWeb\GameForum\GameForum.ApplicationLogic\bin\Debug\netstandard2.0\GameForum.ApplicationLogic.dll
+F:\PAW\ProiectareaAplicatiilorWeb\GameForum\GameForum.ApplicationLogic\bin\Debug\netstandard2.0\GameForum.ApplicationLogic.pdb
+F:\PAW\ProiectareaAplicatiilorWeb\GameForum\GameForum.ApplicationLogic\obj\Debug\netstandard2.0\GameForum.ApplicationLogic.AssemblyInfoInputs.cache
+F:\PAW\ProiectareaAplicatiilorWeb\GameForum\GameForum.ApplicationLogic\obj\Debug\netstandard2.0\GameForum.ApplicationLogic.AssemblyInfo.cs
+F:\PAW\ProiectareaAplicatiilorWeb\GameForum\GameForum.ApplicationLogic\obj\Debug\netstandard2.0\GameForum.ApplicationLogic.dll
+F:\PAW\ProiectareaAplicatiilorWeb\GameForum\GameForum.ApplicationLogic\obj\Debug\netstandard2.0\GameForum.ApplicationLogic.pdb
+F:\PAW\ProiectareaAplicatiilorWeb\GameForum\GameForum.ApplicationLogic\obj\Debug\netstandard2.0\GameForum.ApplicationLogic.csprojAssemblyReference.cache

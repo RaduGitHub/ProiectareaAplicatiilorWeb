@@ -7,7 +7,6 @@ namespace GameForum.ApplicationLogic.Model
 {
     public class User
     {
-        internal Guid userId;
         public Guid UserId { get; set; }
         public Guid ID { get; set; }
         public string Username { get; set; }

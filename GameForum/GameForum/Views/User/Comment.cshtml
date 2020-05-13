@@ -1,0 +1,17 @@
+﻿@model GameForum.ApplicationLogic.Model.Comment
+@{
+    ViewData["Title"] = "Comment";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@*
+    @Html.TextBox("Comment Here", null, new { @class = "form-control" })
+    <input id="CreateComment" type="button" value="Create" onclick="location.href=@Url.Action("CreateClick", "User")" />
+*@
+
+    <form action="CreateClick" method="post">
+        <label>Comment</label>
+        <input type="text" name="CommentText" placeholder="Description" />
+        <br />
+        <input type="submit" value="Save Comment" />
+    </form>

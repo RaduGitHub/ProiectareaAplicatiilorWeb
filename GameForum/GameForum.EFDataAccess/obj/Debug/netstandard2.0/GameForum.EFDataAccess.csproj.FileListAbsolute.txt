@@ -9,3 +9,14 @@ C:\Users\radum\source\repos\GameForum\GameForum.EFDataAccess\bin\Debug\netstanda
 C:\Users\radum\source\repos\GameForum\GameForum.EFDataAccess\obj\Debug\netstandard2.0\GameForum.EFDataAccess.csproj.CopyComplete
 C:\Users\radum\source\repos\GameForum\GameForum.EFDataAccess\obj\Debug\netstandard2.0\GameForum.EFDataAccess.dll
 C:\Users\radum\source\repos\GameForum\GameForum.EFDataAccess\obj\Debug\netstandard2.0\GameForum.EFDataAccess.pdb
+F:\PAW\ProiectareaAplicatiilorWeb\GameForum\GameForum.EFDataAccess\bin\Debug\netstandard2.0\GameForum.EFDataAccess.deps.json
+F:\PAW\ProiectareaAplicatiilorWeb\GameForum\GameForum.EFDataAccess\bin\Debug\netstandard2.0\GameForum.EFDataAccess.dll
+F:\PAW\ProiectareaAplicatiilorWeb\GameForum\GameForum.EFDataAccess\bin\Debug\netstandard2.0\GameForum.EFDataAccess.pdb
+F:\PAW\ProiectareaAplicatiilorWeb\GameForum\GameForum.EFDataAccess\bin\Debug\netstandard2.0\GameForum.ApplicationLogic.dll
+F:\PAW\ProiectareaAplicatiilorWeb\GameForum\GameForum.EFDataAccess\bin\Debug\netstandard2.0\GameForum.ApplicationLogic.pdb
+F:\PAW\ProiectareaAplicatiilorWeb\GameForum\GameForum.EFDataAccess\obj\Debug\netstandard2.0\GameForum.EFDataAccess.csprojAssemblyReference.cache
+F:\PAW\ProiectareaAplicatiilorWeb\GameForum\GameForum.EFDataAccess\obj\Debug\netstandard2.0\GameForum.EFDataAccess.AssemblyInfoInputs.cache
+F:\PAW\ProiectareaAplicatiilorWeb\GameForum\GameForum.EFDataAccess\obj\Debug\netstandard2.0\GameForum.EFDataAccess.AssemblyInfo.cs
+F:\PAW\ProiectareaAplicatiilorWeb\GameForum\GameForum.EFDataAccess\obj\Debug\netstandard2.0\GameForum.EFDataAccess.csproj.CopyComplete
+F:\PAW\ProiectareaAplicatiilorWeb\GameForum\GameForum.EFDataAccess\obj\Debug\netstandard2.0\GameForum.EFDataAccess.dll
+F:\PAW\ProiectareaAplicatiilorWeb\GameForum\GameForum.EFDataAccess\obj\Debug\netstandard2.0\GameForum.EFDataAccess.pdb

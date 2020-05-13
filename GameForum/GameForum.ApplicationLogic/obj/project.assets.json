@@ -275,11 +275,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\radum\\source\\repos\\GameForum\\GameForum.ApplicationLogic\\GameForum.ApplicationLogic.csproj",
+      "projectUniqueName": "F:\\PAW\\ProiectareaAplicatiilorWeb\\GameForum\\GameForum.ApplicationLogic\\GameForum.ApplicationLogic.csproj",
       "projectName": "GameForum.ApplicationLogic",
-      "projectPath": "C:\\Users\\radum\\source\\repos\\GameForum\\GameForum.ApplicationLogic\\GameForum.ApplicationLogic.csproj",
+      "projectPath": "F:\\PAW\\ProiectareaAplicatiilorWeb\\GameForum\\GameForum.ApplicationLogic\\GameForum.ApplicationLogic.csproj",
       "packagesPath": "C:\\Users\\radum\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\radum\\source\\repos\\GameForum\\GameForum.ApplicationLogic\\obj\\",
+      "outputPath": "F:\\PAW\\ProiectareaAplicatiilorWeb\\GameForum\\GameForum.ApplicationLogic\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

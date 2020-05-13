@@ -8,7 +8,7 @@ using System.Text;
 
 namespace GameForum.ApplicationLogic.Services
 {
-    class CommentService
+    public class CommentService
     {
         private IUser userRepository;
         private Abstractions.GameService gameRepository;

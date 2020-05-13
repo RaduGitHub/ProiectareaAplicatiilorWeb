@@ -21,12 +21,10 @@ namespace GameForum.ApplicationLogic.Services
             this.gameRepository = gameRepository;
             this.commentRepository = commentRepository;
         }
-
-        public void CreateNewUser(Guid id, string email, string password)
+        public void CreateNewUser(Guid id, string email, string password, bool isAdmin)
         {
-            var user = new Model.User() { ID = id, Email = email, Username = email, Password = password};
+            var user = new Model.User() { ID = id, Email = email, Username = email, Password = password, IsAdmin = isAdmin };
             user = userRepository.Add(user);
-            
         }
         public User GetUserByUserId(string userId)
         {

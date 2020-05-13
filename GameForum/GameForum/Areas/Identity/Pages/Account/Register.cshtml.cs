@@ -85,7 +85,7 @@ namespace GameForum.Areas.Identity.Pages.Account
                 {
                     _logger.LogInformation("User created a new account with password.");
 
-                    userService.CreateNewUser(Guid.Parse(user.Id), Input.Email, Input.Password);
+                    userService.CreateNewUser(Guid.Parse(user.Id), Input.Email, Input.Password, false);
 
                     var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
                     code = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(code));
