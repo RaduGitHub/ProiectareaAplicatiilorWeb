@@ -1,0 +1,23 @@
+﻿@model GameForum.ApplicationLogic.Model.Game
+@{
+    ViewData["Title"] = "AddGame";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>AddGame</h1>
+
+<div>
+    <form asp-action="AddGameBtn" asp-controller="User">
+        <h4>Add Game</h4>
+        <div class="form-group">
+            <label asp-for="@Model.Title"></label>
+            <input asp-for="@Model.Title" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="@Model.Description"></label>
+            <input asp-for="@Model.Description" class="form-control" />
+        </div>
+
+        <button type="submit" class="btn btn-primary">Add Game</button>
+    </form>
+</div>

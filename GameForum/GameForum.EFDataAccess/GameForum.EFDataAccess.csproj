@@ -7,9 +7,20 @@
   <ItemGroup>
     <Compile Remove="Migrations\20200512205942_Reconstruct.cs" />
     <Compile Remove="Migrations\20200512205942_Reconstruct.Designer.cs" />
+    <Compile Remove="Migrations\20200519155057_RemadeDatabase.cs" />
+    <Compile Remove="Migrations\20200519155057_RemadeDatabase.Designer.cs" />
+    <Compile Remove="Migrations\20200519155919_asd.cs" />
+    <Compile Remove="Migrations\20200519155919_asd.Designer.cs" />
+    <Compile Remove="Migrations\20200519160758_InitialMigration2.cs" />
+    <Compile Remove="Migrations\20200519160758_InitialMigration2.Designer.cs" />
+    <Compile Remove="Migrations\20200519161510_InitialMigration2.cs" />
+    <Compile Remove="Migrations\20200519161510_InitialMigration2.Designer.cs" />
+    <Compile Remove="Migrations\20200519161718_InitMig2.cs" />
+    <Compile Remove="Migrations\20200519161718_InitMig2.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="EntityFramework" Version="6.4.4" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.4" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.4" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.4">

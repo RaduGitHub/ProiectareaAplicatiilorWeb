@@ -20,7 +20,7 @@ namespace GameForum.EFDataAccess
             throw new NotImplementedException();
         }
 
-        public Guid GetCreatorId(Guid gameId)
+        public int GetCreatorId(int gameId)
         {
             return dbContext.Games.Where(Game => Game.GameID == gameId).Select(Game => Game.CreatorID).SingleOrDefault();
         }
@@ -45,7 +45,7 @@ namespace GameForum.EFDataAccess
             throw new NotImplementedException();
         }
 
-        Game GetGameByGameId(Guid gameId)
+        Game GetGameByGameId(int gameId)
         {
             return dbContext.Games
                 .Where(Game => Game.GameID == gameId)

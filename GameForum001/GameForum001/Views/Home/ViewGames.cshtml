@@ -1,0 +1,39 @@
+﻿@model IEnumerable<GameForum.ApplicationLogic.Model.Game>
+@{
+    ViewData["Title"] = "ViewGames";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>ViewGames</h1>
+<div>
+    <table class="table table-striped text-center">
+
+        <tr>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Score</th>
+            <th>NOComments</th>
+            <th>Date</th>
+            <th>Actions</th>
+        </tr>
+        @foreach (var game in Model.OrderByDescending(x => x.DateCreated))
+        {
+
+        <tr>
+            <td>@Html.DisplayName(game.Title.ToString())</td>
+            <td>@Html.DisplayName(game.Description.ToString())</td>
+            <td>@Html.DisplayName(game.Score.ToString())</td>
+            <td>@Html.DisplayName(game.NOComments.ToString())</td>
+            <td>@Html.Raw(game.DateCreated)</td>
+            <td>
+                <a asp-action="Comment" asp-controller="User" asp-route-id="@game.GameID" class="ActionButton">
+                    <i class="fas fa-exclamation"></i>
+                </a>
+                <a asp-action="GamePage" asp-controller="User" asp-route-id="@game.GameID" class="ActionButton">
+                    <i class="far fa-eye"></i>
+                </a>
+            </td>
+        </tr>
+        }
+    </table>
+</div>

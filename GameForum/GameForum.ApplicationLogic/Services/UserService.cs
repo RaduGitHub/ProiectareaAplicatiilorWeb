@@ -23,7 +23,7 @@ namespace GameForum.ApplicationLogic.Services
         }
         public void CreateNewUser(Guid id, string email, string password, bool isAdmin)
         {
-            var user = new Model.User() { ID = id, Email = email, Username = email, Password = password, IsAdmin = isAdmin };
+            var user = new Model.User() { Email = email, Username = email, Password = password, IsAdmin = isAdmin };
             user = userRepository.Add(user);
         }
         public User GetUserByUserId(string userId)
@@ -52,11 +52,11 @@ namespace GameForum.ApplicationLogic.Services
             }
 
             return commentRepository.GetAll()
-                .Where(Comment => Comment.CreatorID != null && Comment.CreatorID == userIdGuid)
+                .Where(Comment => Comment.CreatorID != null && Comment.CreatorID.ToString() == userId)
                 .AsEnumerable();
         }
 
-        public void AddComment(string userId, string commentText, string gameId)
+        /*public void AddComment(string userId, string commentText, string gameId)
         {
             Guid userIdGuid = Guid.Empty;
             if(!Guid.TryParse(userId, out userIdGuid))
@@ -85,7 +85,7 @@ namespace GameForum.ApplicationLogic.Services
             }
 
             commentRepository.Add(new Comment() { CommentID = Guid.NewGuid(), Score = 0, GameId = gameIdGuid, CreatorID = userIdGuid, Text = commentText });
-        }
+        }*/
         public void DeleteComment(string userId, string commentId)
         {
             Guid userIdGuid = Guid.Empty;

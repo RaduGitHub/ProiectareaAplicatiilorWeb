@@ -1,0 +1,22 @@
+﻿@model GameForum.ApplicationLogic.Model.Comment
+@{
+    ViewData["Title"] = "Comment";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@*
+    @Html.TextBox("Comment Here", null, new { @class = "form-control" })
+    <input id="CreateComment" type="button" value="Create" onclick="location.href=@Url.Action("CreateClick", "User")" />
+*@
+<div>
+    <h4>Comment for the game @ViewBag.gameId</h4>
+</div>
+<div>
+    <form asp-action="AddComment" asp-controller="User">
+        <h4>Add Comment</h4>
+        <div class="form-group">
+            <input asp-for="@Model.Text" class="form-control" />
+        </div>
+        <button type="submit" class="btn btn-primary" asp-route-id="@ViewBag.gameId" >Register</button>
+    </form>
+</div>

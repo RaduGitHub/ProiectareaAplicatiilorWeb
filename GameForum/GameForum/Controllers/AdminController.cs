@@ -43,7 +43,6 @@ namespace GameForum.Controllers
             userRepository.Delete(user);
             var userIdentity = await _userManager.FindByIdAsync(ID);
             var rolesForUser = await _userManager.GetRolesAsync(userIdentity);
-
             
             if (rolesForUser.Count() > 0)
             {

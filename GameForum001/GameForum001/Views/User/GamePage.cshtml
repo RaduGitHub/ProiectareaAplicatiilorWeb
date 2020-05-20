@@ -1,0 +1,45 @@
+﻿@model GameForum001.Models.GamePageMV
+@{
+    ViewData["Title"] = "GamePage";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@{
+    Guid var = @Model.GameID;
+}
+<h1>GamePage</h1>
+
+<div class="games">
+    <div class="container">
+        <div class="col-lg-12 offset-lg-11">
+            <a asp-action="Back" class="ActionButton">
+                <i class="fas fa-long-arrow-alt-left"></i>
+            </a>
+        </div>
+        <div class="row">
+            <h4>
+                @Model.Title
+            </h4>
+        </div>
+
+        <div class="row">
+            <h4>
+                @Model.GameID
+            </h4>
+        </div>
+
+        <div>
+            <form asp-action="AddComment" asp-controller="User">
+                <h4>Add Comment</h4>
+                <div class="form-group">
+                    <label asp-for="@Model.Text"></label>
+                    <input asp-for="@Model.Text" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label asp-for="@Model.GameID"></label>
+                    <input asp-for="@Model.GameID" class="form-control" value="@Model.GameID"/>
+                </div>
+                <button type="submit" class="btn btn-primary">6666666</button>
+            </form>
+        </div>
+    </div>
+</div>

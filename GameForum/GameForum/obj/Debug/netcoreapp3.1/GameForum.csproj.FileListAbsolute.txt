@@ -406,3 +406,12 @@ F:\PAW\ProiectareaAplicatiilorWeb\GameForum\GameForum\obj\Debug\netcoreapp3.1\Ga
 F:\PAW\ProiectareaAplicatiilorWeb\GameForum\GameForum\obj\Debug\netcoreapp3.1\GameForum.pdb
 F:\PAW\ProiectareaAplicatiilorWeb\GameForum\GameForum\obj\Debug\netcoreapp3.1\Razor\Views\Admin\DeleteUser.cshtml.g.cs
 F:\PAW\ProiectareaAplicatiilorWeb\GameForum\GameForum\obj\Debug\netcoreapp3.1\Razor\Views\User\Comment.cshtml.g.cs
+F:\PAW\ProiectareaAplicatiilorWeb\GameForum\GameForum\bin\Debug\netcoreapp3.1\Microsoft.Win32.SystemEvents.dll
+F:\PAW\ProiectareaAplicatiilorWeb\GameForum\GameForum\bin\Debug\netcoreapp3.1\System.CodeDom.dll
+F:\PAW\ProiectareaAplicatiilorWeb\GameForum\GameForum\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+F:\PAW\ProiectareaAplicatiilorWeb\GameForum\GameForum\bin\Debug\netcoreapp3.1\System.Drawing.Common.dll
+F:\PAW\ProiectareaAplicatiilorWeb\GameForum\GameForum\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+F:\PAW\ProiectareaAplicatiilorWeb\GameForum\GameForum\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+F:\PAW\ProiectareaAplicatiilorWeb\GameForum\GameForum\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+F:\PAW\ProiectareaAplicatiilorWeb\GameForum\GameForum\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+F:\PAW\ProiectareaAplicatiilorWeb\GameForum\GameForum\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll

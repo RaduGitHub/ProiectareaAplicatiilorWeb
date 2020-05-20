@@ -9,9 +9,12 @@
     <input id="CreateComment" type="button" value="Create" onclick="location.href=@Url.Action("CreateClick", "User")" />
 *@
 
-    <form action="CreateClick" method="post">
-        <label>Comment</label>
-        <input type="text" name="CommentText" placeholder="Description" />
-        <br />
-        <input type="submit" value="Save Comment" />
+<div>
+    <form asp-action="AddComment" asp-controller="User">
+        <h4>Add Comment</h4>
+        <div class="form-group">
+            <input asp-for="@Model.Text" class="form-control" />
+        </div>
+        <button type="submit" class="btn btn-primary">Register</button>
     </form>
+</div>

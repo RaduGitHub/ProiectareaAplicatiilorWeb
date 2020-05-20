@@ -9,7 +9,7 @@ namespace GameForum.ApplicationLogic.Model
         public Guid CommentID { get; set; }
         public string Text { get; set; }
         public double Score{ get; set; }
-        public Guid CreatorID { get; set; }
-        public Guid GameId { get; set; }
+        public int CreatorID { get; set; }
+        public int GameId { get; set; }
     }
 }

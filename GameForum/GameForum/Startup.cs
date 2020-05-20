@@ -53,6 +53,9 @@ namespace GameForum
             //services.AddScoped<GameService>();
             services.AddScoped<IComment, CommentRepository>();
             //services.AddScoped<CommentService>();
+
+            /*services.AddScoped<IRepository, BaseRepository>();*/
+
             services.AddControllersWithViews();
             services.AddRazorPages();
         }

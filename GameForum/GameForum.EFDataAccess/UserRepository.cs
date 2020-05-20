@@ -17,7 +17,7 @@ namespace GameForum.EFDataAccess
         }
         public User GetUserByUserId(Guid userId)
         {
-            return dbContext.Users.Where(User => User.ID == userId).SingleOrDefault();
+            return dbContext.Users.Where(User => User.UserId == userId).SingleOrDefault();
         }
 
         public string GetRank(Guid userId)

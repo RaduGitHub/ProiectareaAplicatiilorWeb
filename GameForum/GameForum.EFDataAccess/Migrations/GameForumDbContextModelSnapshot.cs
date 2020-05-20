@@ -15,7 +15,7 @@ namespace GameForum.EFDataAccess.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "3.1.3")
+                .HasAnnotation("ProductVersion", "3.1.4")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
@@ -25,11 +25,11 @@ namespace GameForum.EFDataAccess.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid?>("CreatorIDID")
-                        .HasColumnType("uniqueidentifier");
+                    b.Property<int>("CreatorID")
+                        .HasColumnType("int");
 
-                    b.Property<Guid?>("GameID")
-                        .HasColumnType("uniqueidentifier");
+                    b.Property<int>("GameId")
+                        .HasColumnType("int");
 
                     b.Property<double>("Score")
                         .HasColumnType("float");
@@ -39,21 +39,20 @@ namespace GameForum.EFDataAccess.Migrations
 
                     b.HasKey("CommentID");
 
-                    b.HasIndex("CreatorIDID");
-
-                    b.HasIndex("GameID");
+                    b.HasIndex("GameId");
 
                     b.ToTable("Comment");
                 });
 
             modelBuilder.Entity("GameForum.ApplicationLogic.Model.Game", b =>
                 {
-                    b.Property<Guid>("GameID")
+                    b.Property<int>("GameID")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<Guid?>("CreatorIDID")
-                        .HasColumnType("uniqueidentifier");
+                    b.Property<int>("CreatorID")
+                        .HasColumnType("int");
 
                     b.Property<int>("DateCreated")
                         .HasColumnType("int");
@@ -72,14 +71,12 @@ namespace GameForum.EFDataAccess.Migrations
 
                     b.HasKey("GameID");
 
-                    b.HasIndex("CreatorIDID");
-
                     b.ToTable("Games");
                 });
 
             modelBuilder.Entity("GameForum.ApplicationLogic.Model.User", b =>
                 {
-                    b.Property<Guid>("ID")
+                    b.Property<Guid>("UserId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
@@ -95,33 +92,21 @@ namespace GameForum.EFDataAccess.Migrations
                     b.Property<double>("Score")
                         .HasColumnType("float");
 
-                    b.Property<Guid>("UserId")
-                        .HasColumnType("uniqueidentifier");
-
                     b.Property<string>("Username")
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("ID");
+                    b.HasKey("UserId");
 
                     b.ToTable("Users");
                 });
 
             modelBuilder.Entity("GameForum.ApplicationLogic.Model.Comment", b =>
                 {
-                    b.HasOne("GameForum.ApplicationLogic.Model.User", "CreatorID")
-                        .WithMany()
-                        .HasForeignKey("CreatorIDID");
-
-                    b.HasOne("GameForum.ApplicationLogic.Model.Game", "GameId")
-                        .WithMany()
-                        .HasForeignKey("GameID");
-                });
-
-            modelBuilder.Entity("GameForum.ApplicationLogic.Model.Game", b =>
-                {
-                    b.HasOne("GameForum.ApplicationLogic.Model.User", "CreatorID")
-                        .WithMany()
-                        .HasForeignKey("CreatorIDID");
+                    b.HasOne("GameForum.ApplicationLogic.Model.Game", null)
+                        .WithMany("Comments")
+                        .HasForeignKey("GameId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 #pragma warning restore 612, 618
         }

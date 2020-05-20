@@ -1,0 +1,13 @@
+F:\PAW\ProiectareaAplicatiilorWeb\GameForum001\GameForum001.EFDataAccess\bin\Debug\netcoreapp3.1\GameForum001.EFDataAccess.deps.json
+F:\PAW\ProiectareaAplicatiilorWeb\GameForum001\GameForum001.EFDataAccess\bin\Debug\netcoreapp3.1\GameForum001.EFDataAccess.dll
+F:\PAW\ProiectareaAplicatiilorWeb\GameForum001\GameForum001.EFDataAccess\bin\Debug\netcoreapp3.1\GameForum001.EFDataAccess.pdb
+F:\PAW\ProiectareaAplicatiilorWeb\GameForum001\GameForum001.EFDataAccess\obj\Debug\netcoreapp3.1\GameForum001.EFDataAccess.csprojAssemblyReference.cache
+F:\PAW\ProiectareaAplicatiilorWeb\GameForum001\GameForum001.EFDataAccess\obj\Debug\netcoreapp3.1\GameForum001.EFDataAccess.AssemblyInfoInputs.cache
+F:\PAW\ProiectareaAplicatiilorWeb\GameForum001\GameForum001.EFDataAccess\obj\Debug\netcoreapp3.1\GameForum001.EFDataAccess.AssemblyInfo.cs
+F:\PAW\ProiectareaAplicatiilorWeb\GameForum001\GameForum001.EFDataAccess\obj\Debug\netcoreapp3.1\GameForum001.EFDataAccess.dll
+F:\PAW\ProiectareaAplicatiilorWeb\GameForum001\GameForum001.EFDataAccess\obj\Debug\netcoreapp3.1\GameForum001.EFDataAccess.pdb
+F:\PAW\ProiectareaAplicatiilorWeb\GameForum001\GameForum001.EFDataAccess\bin\Debug\netcoreapp3.1\GameForum001.EFDataAccess.runtimeconfig.json
+F:\PAW\ProiectareaAplicatiilorWeb\GameForum001\GameForum001.EFDataAccess\bin\Debug\netcoreapp3.1\GameForum001.EFDataAccess.runtimeconfig.dev.json
+F:\PAW\ProiectareaAplicatiilorWeb\GameForum001\GameForum001.EFDataAccess\bin\Debug\netcoreapp3.1\GameForum001.ApplicationLogic.dll
+F:\PAW\ProiectareaAplicatiilorWeb\GameForum001\GameForum001.EFDataAccess\bin\Debug\netcoreapp3.1\GameForum001.ApplicationLogic.pdb
+F:\PAW\ProiectareaAplicatiilorWeb\GameForum001\GameForum001.EFDataAccess\obj\Debug\netcoreapp3.1\GameForum001.EFDataAccess.csproj.CopyComplete

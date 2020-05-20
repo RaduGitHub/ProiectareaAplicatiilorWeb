@@ -47,7 +47,7 @@ namespace GameForum.ApplicationLogic.Services
             }
 
             return commentRepository.GetAll()
-                .Where(Comment =>  Comment.GameId == gameIdGuid)
+                .Where(Comment =>  Comment.GameId.ToString() == gameId)
                 .AsEnumerable();
         }
 

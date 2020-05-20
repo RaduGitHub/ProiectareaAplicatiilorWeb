@@ -15,6 +15,5 @@ namespace GameForum.EFDataAccess
         public DbSet<User> Users { get; set; }
         public DbSet<Game> Games { get; set; }
         public DbSet<Comment> Comment { get; set; }
-        public object User { get; set; }
     }
 }
