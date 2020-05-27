@@ -56,6 +56,48 @@ namespace GameForum.Controllers
 
             return RedirectToAction("DeleteUser", "Admin");
         }
+
+        public async Task<IActionResult> AddToAdmin(string ID)
+        {
+            var user = userRepository.GetUserByUserId(Guid.Parse(ID));
+            //userRepository.Delete(user);
+            user.IsAdmin = true;
+            userRepository.Update(user);
+            var userIdentity = await _userManager.FindByIdAsync(ID);
+            var rolesForUser = await _userManager.GetRolesAsync(userIdentity);
+
+            if (rolesForUser.Count() > 0)
+            {
+                foreach (var item in rolesForUser.ToList())
+                {
+                    var result = await _userManager.RemoveFromRoleAsync(userIdentity, "User");
+                    var result2 = await _userManager.AddToRoleAsync(userIdentity, "Admin");
+                }
+            }
+
+            return RedirectToAction("DeleteUser", "Admin");
+        }
+
+        public async Task<IActionResult> DowngradeUser(string ID)
+        {
+            var user = userRepository.GetUserByUserId(Guid.Parse(ID));
+            //userRepository.Delete(user);
+            user.IsAdmin = false;
+            userRepository.Update(user);
+            var userIdentity = await _userManager.FindByIdAsync(ID);
+            var rolesForUser = await _userManager.GetRolesAsync(userIdentity);
+
+            if (rolesForUser.Count() > 0)
+            {
+                foreach (var item in rolesForUser.ToList())
+                {
+                    var result = await _userManager.RemoveFromRoleAsync(userIdentity, "Admin");
+                    var result2 = await _userManager.AddToRoleAsync(userIdentity, "User");
+                }
+            }
+
+            return RedirectToAction("DeleteUser", "Admin");
+        }
     }
     
 }

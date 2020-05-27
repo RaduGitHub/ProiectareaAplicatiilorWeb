@@ -57,7 +57,23 @@ namespace GameForum.EFDataAccess
 
         public void UpdateScore(Guid gameId)
         {
-            throw new NotImplementedException();
+            var game = dbContext.Games.First(a => a.GameID == gameId);
+            var comments = dbContext.Comment.Where(Com => Com.GameId == game.GameID).AsEnumerable();
+            double sum = 0;
+            foreach(var com in comments)
+            {
+                sum += com.Score;
+            }
+            double score = sum / game.NOComments;
+            game.Score = score;
+
+            var entity = dbContext.Update<Game>(game);
+            dbContext.SaveChanges();
+
+            /*var entity = dbContext.Update<T>(itemToUpdate);
+            dbContext.SaveChanges();
+            return entity.Entity;*/
+
         }
 
         /*string GameService.GetCreatorId(Guid gameId)

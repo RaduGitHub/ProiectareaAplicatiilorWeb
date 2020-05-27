@@ -56,36 +56,7 @@ namespace GameForum.ApplicationLogic.Services
                 .AsEnumerable();
         }
 
-        /*public void AddComment(string userId, string commentText, string gameId)
-        {
-            Guid userIdGuid = Guid.Empty;
-            if(!Guid.TryParse(userId, out userIdGuid))
-            {
-                throw new Exception("Invalid Guid Format");
-            }
-
-            Guid gameIdGuid = Guid.Empty;
-            if (!Guid.TryParse(gameId, out gameIdGuid))
-            {
-                throw new Exception("Invalid Guid Format");
-            }
-
-            var user = userRepository.GetUserByUserId(userIdGuid);
-
-            if(user == null)
-            {
-                throw new EntityNotFoundException(userIdGuid);
-            }
-
-            var comment = commentText;
-
-            if (comment == null)
-            {
-                throw new EmptyCommentException(gameIdGuid);
-            }
-
-            commentRepository.Add(new Comment() { CommentID = Guid.NewGuid(), Score = 0, GameId = gameIdGuid, CreatorID = userIdGuid, Text = commentText });
-        }*/
+        
         public void DeleteComment(string userId, string commentId)
         {
             Guid userIdGuid = Guid.Empty;

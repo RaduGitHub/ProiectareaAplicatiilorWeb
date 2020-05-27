@@ -1,4 +1,4 @@
-﻿@model GameForum.ApplicationLogic.Model.Game
+﻿@model GameForum001.Models.AddGameMV
 @{
     ViewData["Title"] = "AddGame";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -7,17 +7,24 @@
 <h1>AddGame</h1>
 
 <div>
-    <form asp-action="AddGameBtn" asp-controller="User">
-        <h4>Add Game</h4>
+    <form asp-action="AddGameBtn" asp-controller="User" enctype="multipart/form-data">
+
         <div class="form-group">
             <label asp-for="@Model.Title"></label>
             <input asp-for="@Model.Title" class="form-control" />
         </div>
         <div class="form-group">
             <label asp-for="@Model.Description"></label>
-            <input asp-for="@Model.Description" class="form-control" />
+            <textarea id="TextArea1" rows="5" cols="20" class="form-control" asp-for="@Model.Description" style="resize:none"></textarea>
         </div>
-
+        <div class="row">
+            <div class="col-2">
+                Game Image
+            </div>
+            <div class="col-10">
+                    <input type="file" asp-for="@Model.Image" />
+            </div>
+        </div>
         <button type="submit" class="btn btn-primary">Add Game</button>
     </form>
 </div>

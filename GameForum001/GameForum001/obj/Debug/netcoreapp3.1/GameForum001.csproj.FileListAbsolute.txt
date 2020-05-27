@@ -65,7 +65,6 @@ F:\PAW\ProiectareaAplicatiilorWeb\GameForum001\GameForum001\obj\Debug\netcoreapp
 F:\PAW\ProiectareaAplicatiilorWeb\GameForum001\GameForum001\obj\Debug\netcoreapp3.1\GameForum001.RazorCoreGenerate.cache
 F:\PAW\ProiectareaAplicatiilorWeb\GameForum001\GameForum001\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
 F:\PAW\ProiectareaAplicatiilorWeb\GameForum001\GameForum001\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
-F:\PAW\ProiectareaAplicatiilorWeb\GameForum001\GameForum001\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
 F:\PAW\ProiectareaAplicatiilorWeb\GameForum001\GameForum001\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
 F:\PAW\ProiectareaAplicatiilorWeb\GameForum001\GameForum001\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 F:\PAW\ProiectareaAplicatiilorWeb\GameForum001\GameForum001\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
@@ -198,7 +197,10 @@ F:\PAW\ProiectareaAplicatiilorWeb\GameForum001\GameForum001\obj\Debug\netcoreapp
 F:\PAW\ProiectareaAplicatiilorWeb\GameForum001\GameForum001\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
 F:\PAW\ProiectareaAplicatiilorWeb\GameForum001\GameForum001\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
 F:\PAW\ProiectareaAplicatiilorWeb\GameForum001\GameForum001\obj\Debug\netcoreapp3.1\Razor\Views\Admin\DeleteUser.cshtml.g.cs
-F:\PAW\ProiectareaAplicatiilorWeb\GameForum001\GameForum001\obj\Debug\netcoreapp3.1\Razor\Views\User\Comment.cshtml.g.cs
 F:\PAW\ProiectareaAplicatiilorWeb\GameForum001\GameForum001\obj\Debug\netcoreapp3.1\Razor\Views\User\AddGame.cshtml.g.cs
 F:\PAW\ProiectareaAplicatiilorWeb\GameForum001\GameForum001\obj\Debug\netcoreapp3.1\Razor\Views\Home\ViewGames.cshtml.g.cs
 F:\PAW\ProiectareaAplicatiilorWeb\GameForum001\GameForum001\obj\Debug\netcoreapp3.1\Razor\Views\User\GamePage.cshtml.g.cs
+F:\PAW\ProiectareaAplicatiilorWeb\GameForum001\GameForum001\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Http.Features.dll
+F:\PAW\ProiectareaAplicatiilorWeb\GameForum001\GameForum001\bin\Debug\netcoreapp3.1\System.IO.Pipelines.dll
+F:\PAW\ProiectareaAplicatiilorWeb\GameForum001\GameForum001\obj\Debug\netcoreapp3.1\Razor\Views\User\Comments.cshtml.g.cs
+F:\PAW\ProiectareaAplicatiilorWeb\GameForum001\GameForum001\obj\Debug\netcoreapp3.1\Razor\Views\User\EditComment.cshtml.g.cs

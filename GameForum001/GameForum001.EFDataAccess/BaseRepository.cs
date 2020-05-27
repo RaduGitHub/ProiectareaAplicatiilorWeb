@@ -40,6 +40,7 @@ namespace GameForum.DataAccess
             var entity = dbContext.Update<T>(itemToUpdate);
             dbContext.SaveChanges();
             return entity.Entity;
+            
         }
     }
 }

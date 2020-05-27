@@ -36,11 +36,23 @@
                     {
                         <td>Normal User</td>
                     }
-                    <td>
-                        <a asp-action="Delete" asp-route-id="@user.ID" class="ActionButton">
-                            <i class="fas fa-trash"></i>
+                <td>
+                    @if (user.IsAdmin == false)
+                    {
+                        <a asp-action="AddToAdmin" asp-route-id="@user.ID" class="ActionButton">
+                            <i class="far fa-eye"></i>
                         </a>
-                    </td>
+                    }
+                    @if (user.IsAdmin == true)
+                    {
+                        <a asp-action="DowngradeUser" asp-route-id="@user.ID" class="ActionButton">
+                            <i class="far fa-eye"></i>
+                        </a>
+                    }
+                    <a asp-action="Delete" asp-route-id="@user.ID" class="ActionButton">
+                        <i class="fas fa-trash"></i>
+                    </a>
+                </td>
                 </tr>
                 }
             </tbody>

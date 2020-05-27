@@ -16,30 +16,91 @@
             </a>
         </div>
         <div class="row">
-            <h4>
+            <h4 class="page-header">
                 @Model.Title
             </h4>
         </div>
+        <div>
+            <p style="text-align:center;"><img src="data:image/png;base64, @Model.Image" width="100" height="100" alt=""></p>
+        </div>
+        <div>
+            <p style="text-align:right">Score: @Model.Score.ToString("0.00")</p>
+        </div>
 
         <div class="row">
-            <h4>
-                @Model.GameID
-            </h4>
+                @Model.Description.Replace(char.ConvertFromUtf32(13),"<br/>")
         </div>
 
-        <div>
-            <form asp-action="AddComment" asp-controller="User">
-                <h4>Add Comment</h4>
-                <div class="form-group">
-                    <label asp-for="@Model.Text"></label>
-                    <input asp-for="@Model.Text" class="form-control" />
-                </div>
-                <div class="form-group">
-                    <label asp-for="@Model.GameID"></label>
-                    <input asp-for="@Model.GameID" class="form-control" value="@Model.GameID"/>
-                </div>
-                <button type="submit" class="btn btn-primary">6666666</button>
-            </form>
+        <div class="row mt-5">
+            <h4>Comment Section</h4>
+            <table class="table table-striped text-center">
+                <tr>
+                    <th>Score</th>
+                    <th>Text</th>
+                </tr>
+                @foreach (var com in Model.Comments.OrderByDescending(x => x.Score))
+                {
+            <tr>
+                <td>@Html.DisplayName(com.Score.ToString())</td>
+                <td>@com.Text.ToString()</td>
+
+            </tr>
+                }
+            </table>
         </div>
+        
+        
+    </div>
+    <div>
+        <form asp-action="AddComment" asp-controller="User" id="gamescore">
+            <h4>Add Comment</h4>
+            <div class="form-group">
+                <label asp-for="@Model.Text"></label>
+                <div>
+                    <textarea asp-for="@Model.Text" rows="3" cols="100"></textarea>
+                </div>
+            </div>
+            <div class="form-group" style="display:none;">
+                <label asp-for="@Model.GameID"></label>
+                <input asp-for="@Model.GameID" class="form-control" value="@Model.GameID" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Score"></label>
+                @{
+                    List<SelectListItem> listItems = new List<SelectListItem>();
+                    listItems.Add(new SelectListItem
+                    {
+                        Text = "1",
+                        Value = "1"
+
+                    });
+                    listItems.Add(new SelectListItem
+                    {
+                        Text = "2",
+                        Value = "2"
+                    });
+                    listItems.Add(new SelectListItem
+                    {
+                        Text = "3",
+                        Value = "3"
+                    });
+                    listItems.Add(new SelectListItem
+                    {
+                        Text = "4",
+                        Value = "4"
+                    });
+                    listItems.Add(new SelectListItem
+                    {
+                        Text = "5",
+                        Value = "5"
+                    });
+
+                }
+
+                @Html.DropDownList("Score", listItems, new { @class = "form-control" })
+            </div>
+            <button type="submit" class="btn btn-primary">Post Comment</button>
+        </form>
+
     </div>
 </div>

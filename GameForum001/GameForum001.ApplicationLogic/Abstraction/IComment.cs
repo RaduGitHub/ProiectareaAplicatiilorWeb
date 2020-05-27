@@ -9,7 +9,8 @@ namespace GameForum.ApplicationLogic.Abstractions
     {
         double GetScore(Guid CommentId);
         Comment GetCommentByCommentId(Guid CommentId);
-
-        Comment GetCommentByGameId(Guid GameId);
+        IEnumerable<Comment> GetCommentForGameId(Guid GameId);
+        IEnumerable<Comment> GetCommentForUserId(Guid UserId);
+        Comment  GetCommentByUserId(Guid UserId);
     }
 }

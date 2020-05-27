@@ -18,20 +18,33 @@ namespace GameForum.EFDataAccess
         public Comment GetCommentByCommentId(Guid CommentId)
         {
             return dbContext.Comment
-                .Where(Comment => Comment.GameId == CommentId)
+                .Where(Comment => Comment.CommentID == CommentId)
+                .SingleOrDefault();
+        }
+        public Comment GetCommentByUserId(Guid UserId)
+        {
+            return dbContext.Comment
+                .Where(Comment => Comment.CreatorID == UserId)
                 .SingleOrDefault();
         }
 
-        public Comment GetCommentByGameId(Guid GameId)
+        public IEnumerable<Comment> GetCommentForGameId(Guid GameId)
         {
             return dbContext.Comment
                 .Where(Comment => Comment.GameId == GameId)
-                .SingleOrDefault();
+                .AsEnumerable();
         }
 
         public double GetScore(Guid CommentId)
         {
             return dbContext.Comment.Where(Comment => Comment.CommentID == CommentId).Select(Comment => Comment.Score).SingleOrDefault();
+        }
+
+        public IEnumerable<Comment> GetCommentForUserId(Guid UserId)
+        {
+            return dbContext.Comment
+                .Where(c => c.CreatorID == UserId)
+                .AsEnumerable();
         }
     }
 }

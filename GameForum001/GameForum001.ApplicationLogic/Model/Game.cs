@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Http;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -11,8 +12,9 @@ namespace GameForum.ApplicationLogic.Model
         public string Description { get; set; }
         public double Score { get; set; }
         public int NOComments { get; set; }
-        public ICollection<Comment> Comments { get; set; }
+        public IEnumerable<Comment> Comments { get; set; }
         public Guid CreatorID { get; set; }
         public DateTime DateCreated { get; set; }
+        public string Image { get; set; }
     }
 }

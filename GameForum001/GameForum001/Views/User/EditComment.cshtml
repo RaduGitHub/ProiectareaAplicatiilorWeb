@@ -1,0 +1,21 @@
+﻿@model GameForum.ApplicationLogic.Model.Comment
+@{
+    ViewData["Title"] = "EditComment";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Edit your comment</h1>
+<div>
+    <form asp-action="AddEditComment" asp-controller="User" enctype="multipart/form-data">
+
+        <div class="form-group">
+            <label asp-for="@Model.Text"></label>
+            <input asp-for="@Model.Text" class="form-control" />
+        </div>
+        <div class="form-group" style="display:none;">
+            <label asp-for="@Model.CommentID"></label>
+            <input asp-for="@Model.CommentID" class="form-control" value="@Model.CommentID" />
+        </div>
+        <button type="submit" class="btn btn-primary">Edit Comment</button>
+    </form>
+</div>

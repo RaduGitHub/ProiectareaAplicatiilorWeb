@@ -1,0 +1,28 @@
+﻿@model List<GameForum001.Models.UserCommentsMV>
+@{
+    ViewData["Title"] = "Comment";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h4>All your comments</h4>
+<div class="mt-5">
+    <table class="table table-striped text-center">
+        <tr>
+            <th>Game Title</th>
+            <th>Comment</th>
+            <th>Action</th>
+        </tr>
+        @foreach (var comment in Model.OrderByDescending(x => x.DateCreated))
+        {
+
+            <tr>
+                <td>@Html.DisplayName(comment.Title.ToString())</td>
+                <td>@comment.Text.ToString()</td>
+                <td>
+                    <a asp-action="EditComment" asp-controller="User" asp-route-id="@comment.CommentID" class="ActionButton">
+                        <i class="far fa-eye"></i>
+                    </a>
+                </td>
+            </tr>
+        }
+    </table>
+</div>
